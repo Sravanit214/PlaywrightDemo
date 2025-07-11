@@ -62,13 +62,13 @@ test('ComfirmationBox',async({page})=>{
         console.log(dialog.message)
         await dialog.accept();
     })
-    await page.click("button:has-text('Comfirmation Alert')");
+    await page.click("button:has-text('Confirmation Alert')");
     await page.waitForTimeout(10000);
 });
 
 test('KeyBoard Actions',async({page})=>{
 
-    await page.goto("https://testautomationpractice.blogspot.com/");
+    await page.goto("https://gotranscript.com/text-compare");
     await page.fill("[name='text1']",'Welcome to Automation')
 
     await page.keyboard.press('Control+A')

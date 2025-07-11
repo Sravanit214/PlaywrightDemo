@@ -12,6 +12,7 @@ export class Checkout{
     private cardCVC:Locator
     private submitButton:Locator
     private verifytext:Locator
+
     constructor(page:Page){
         this.page=page;
         this.proceedtocheckout=page.getByText('Proceed To Checkout')
@@ -22,19 +23,19 @@ export class Checkout{
         this.cardYYYY=page.getByPlaceholder('YYYY')
         this.cardCVC=page.locator('input[name="cvc"]')
         this.submitButton=page.locator('#submit')
-        this.verifytext=page.locator('h2[data-qa="order-place"] ~p')
+        this.verifytext=page.locator('h2[data-qa="order-placed"] ~p')
     }
 
     async checkout(){
         await this.proceedtocheckout.click()
         await this.placeorder.click({timeout:3000})
-        await this.cardname.fill('')
-        await this.cardNumber.click()
-        await this.cardMM.click()
-        await this.cardYYYY.click()
-        await this.cardCVC.click()
+        await this.cardname.fill(dt.cardholdername)
+        await this.cardNumber.fill(dt.cardnumber)
+        await this.cardMM.fill(dt.cardMM)
+        await this.cardYYYY.fill(dt.cardyear)
+        await this.cardCVC.fill(dt.cardcvv)
         await this.submitButton.click()
-        await this.verifytext.click()
-
+        const msg=await this.verifytext.textContent()
+        console.log(msg)
     }
 }

@@ -7,7 +7,7 @@ test("Date Picker",async()=>{
     const page = await context.newPage();
 
     await page.goto('https://testautomationpractice.blogspot.com/')
-    await page.fill('SelectedDate','01/07/2025')
+    //await page.fill('SelectedDate','01/07/2025')
     await page.waitForTimeout(3000)
 
 })
