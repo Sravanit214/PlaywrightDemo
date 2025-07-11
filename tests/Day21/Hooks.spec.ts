@@ -3,10 +3,10 @@ let browser:Browser;
 let page:Page;
 let context:BrowserContext;
 
-test.beforeAll("Before All Test",async()=>{
-    browser= await chromium.launch({headless:false})
-    context =await browser.newContext()
-    page =await context.newPage();
+test.beforeAll("Before All Test",async({page})=>{
+    // browser= await chromium.launch({headless:false})
+    // context =await browser.newContext()
+    // page =await context.newPage();
     console.log("*** Before All Test ***")
 })
 test.beforeEach("Before Each Test",async()=>{
@@ -16,7 +16,7 @@ test.describe("Describe",async()=>{
     test.beforeAll("Before All inside describe",async()=>{
         console.log("*** Before All inside describe ***")
     })
-    test.beforeEach("Before Each inside describe",async()=>{
+    test.beforeEach("Before Each inside describe",async({page})=>{
         await page.goto("https://www.saucedemo.com/v1/")
         await page.getByPlaceholder('Username').fill("standard_user");
         await page.getByPlaceholder('Password').fill("secret_sauce");
