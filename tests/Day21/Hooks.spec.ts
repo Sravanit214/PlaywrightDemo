@@ -41,5 +41,4 @@ test.afterEach("After Each Test",async()=>{
 })
 test.afterAll("After All Test",async()=>{
     console.log("*** After All Test ***")
-    browser.close()
 })
