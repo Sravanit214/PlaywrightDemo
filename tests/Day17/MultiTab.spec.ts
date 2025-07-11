@@ -18,7 +18,7 @@ test('Multi Tab Context', async()=>{
 
 })
 
-test.only('Multi Tab Promise', async()=>{
+test('Multi Tab Promise', async()=>{
 
     const browser = await chromium.launch();
     const context = await browser.newContext();

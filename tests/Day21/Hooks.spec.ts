@@ -12,7 +12,7 @@ test.beforeAll("Before All Test",async()=>{
 test.beforeEach("Before Each Test",async()=>{
     console.log("*** Before Each Test ***")
 })
-test.describe.only("Describe",async()=>{
+test.describe("Describe",async()=>{
     test.beforeAll("Before All inside describe",async()=>{
         console.log("*** Before All inside describe ***")
     })
