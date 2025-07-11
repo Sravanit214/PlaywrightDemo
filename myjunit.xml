@@ -1,0 +1,16 @@
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="1.361797">
+<testsuite name="Day23/reporter.spec.ts" timestamp="2025-07-09T07:21:09.794Z" hostname="chromium" tests="2" failures="0" skipped="0" time="0.334" errors="0">
+<testcase name="test 1" classname="Day23/reporter.spec.ts" time="0.283">
+<system-out>
+<![CDATA[Test1
+]]>
+</system-out>
+</testcase>
+<testcase name="test 2" classname="Day23/reporter.spec.ts" time="0.051">
+<system-out>
+<![CDATA[Test2
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

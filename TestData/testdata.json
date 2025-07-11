@@ -1,0 +1,26 @@
+[
+    {
+        "Id": 1,
+        "fname" :"sravani",
+        "lname" : "sai",
+        "email" : "sai@test.com"
+    },
+    {
+        "Id": 2,
+        "fname" :"test1",
+        "lname" : "Automation",
+        "email" : "Automation@test.com"
+    },
+    {
+        "Id": 3,
+        "fname" :"siri",
+        "lname" : "sai",
+        "email" : "sri@test.com"
+    },
+    {
+        "Id": 4,
+        "fname" :"test2",
+        "lname" : "Automation",
+        "email" : "Automation2@test.com"
+    }
+]

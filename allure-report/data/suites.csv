@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1353","Test1","chromium","Wed Jul 09 14:54:03 IST 2025","passed","Wed Jul 09 14:54:05 IST 2025","Describe","Day21/Hooks.spec.ts","",""
+"","202","Test2","chromium","Wed Jul 09 14:54:06 IST 2025","passed","Wed Jul 09 14:54:07 IST 2025","Describe","Day21/Hooks.spec.ts","",""
+"","15080","Multi Tab Promise","chromium","Wed Jul 09 14:53:48 IST 2025","passed","Wed Jul 09 14:54:03 IST 2025","","Day17/MultiTab.spec.ts","",""

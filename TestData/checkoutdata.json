@@ -1,0 +1,20 @@
+{
+    "carddetails":[
+        {
+            "cardholdername":"Test"
+        },
+        {
+            "cardnumber":"53876837798936"
+        },
+        {
+            "cardMM":"08"
+        },
+        {
+            "cardyear":"2028"
+        },
+        {
+            "cardcvv":"345"
+        }
+
+    ]
+}
